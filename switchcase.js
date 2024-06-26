@@ -100,3 +100,56 @@
 // Bonificação empresa
 // tempo de empresa
 
+// let salariobase = 2000
+// let opcao= Number(prompt('Digite seu tempo de empresa  :\n 1- áte 1 ano :\n 2 - 2 a 5 anos  \n 3- 5 a 10 anos \n 4- mais de 10 anos'))
+// let resultado
+// let filhos=Number(prompt('digite numero de filhos menores de 7 anos'))
+// let beneficio =1200
+// let bon1= 200
+// let bon2= 330
+// let bon3=440
+
+
+// switch (opcao) {
+//     case 1:
+        
+//         if (filhos<7) {
+//             resultado= (((salariobase-(salariobase*0.15))+(500*filhos))+beneficio)
+            
+//         } else {
+//             resultado= (salariobase-(salariobase*0.15))
+//         }
+//         console.log(`o seu salário é ${resultado}`)
+        
+//         break;
+//     case 2:
+       
+//         if (filhos<7) {
+//             resultado=(((salariobase-(salariobase*0.15))+(500*filhos))+(beneficio+bon1))
+//             document.write(`o seu salário é  ${resultado}`)
+            
+//         } else {
+//             resultado=((salariobase-(salariobase*0.15))+bon1)
+//         }
+//         console.log(`o seu salário é  ${resultado}`)
+//         break;
+//     case 3:
+//         if (filhos<7) {
+//             resultado=(((salariobase-(salariobase*0.15))+(500*filhos))+(beneficio+bon2))
+//         } else {
+//             resultado=((salariobase-(salariobase*0.15))+bon2)
+//         }
+//         console.log(`o seu salário é  ${resultado}`)
+//         break;
+//     case 4:
+//         if (filhos<7) {
+//             resultado=(((salariobase-(salariobase*0.15))+(500*filhos))+(beneficio+bon3))
+//         } else {
+//             resultado=((salariobase-(salariobase*0.15))+bon3)
+//         }
+//         console.log(`o seu salário é  ${resultado}`)
+//         break;
+
+//     default:
+//         break;
+// }
