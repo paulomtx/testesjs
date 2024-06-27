@@ -79,6 +79,7 @@ let incrementocompras =100
 for(let i =min; i<=max; i++){
     let valorfinal= valorcompra - (valorcompra*i/100) 
     console.log(`valor compra ${valorcompra}-${i}- valor final ${valorfinal}`)
+    valorcompra+=incrementocompras
 
 }
 
