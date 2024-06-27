@@ -31,25 +31,57 @@
 
 //ponderada
 
-let media =0
-let somaNotas = 0
-let pesos =0
+// let media =0
+// let somaNotas = 0
+// let pesos =0
 
-for (let i = 1; i <= 4; i++) {
-    if (i%2==0) {
-        somaNotas+= Number(prompt(`Digite cada nota ${i}`))*2
-        pesos+=2
-    }
-        else if (i == 3){
-        somaNotas+= Number(prompt(`Digite cada nota ${i}`))*3
-        pesos+=3
-        }
-     else {
-        somaNotas+= Number(prompt(`Digite cada nota ${i}`))
-        pesos+=1
-    }
+// for (let i = 1; i <= 4; i++) {
+//     if (i%2==0) {
+//         somaNotas+= Number(prompt(`Digite cada nota ${i}`))*2
+//         pesos+=2
+//     }
+//         else if (i == 3){
+//         somaNotas+= Number(prompt(`Digite cada nota ${i}`))*3
+//         pesos+=3
+//         }
+//      else {
+//         somaNotas+= Number(prompt(`Digite cada nota ${i}`))
+//         pesos+=1
+//     }
     
+// }
+
+// media= somaNotas/pesos
+// console.log(media)
+// exercico logica aula 4 atividade 2 
+// let inicio = 30 
+// let final = 90
+
+// let repeticoes = 10 
+// let contagemnumintervalo = 0
+
+// for (let i = 0; i <= repeticoes; i++) {
+//     let numero= Number(prompt('Digite um número'))
+//     if(numero<final && numero>inicio){
+//          contagemnumintervalo+=1
+//     }
+// }
+
+// console.log(`a contagem é ${contagemnumintervalo}`)
+
+// tabela desconto
+
+let min =1 
+let max = 25
+let valorcompra = 500
+let incrementocompras =100
+
+for(let i =min; i<=max; i++){
+    let valorfinal= valorcompra - (valorcompra*i/100) 
+    console.log(`valor compra ${valorcompra}-${i}- valor final ${valorfinal}`)
+
 }
 
-media= somaNotas/pesos
-console.log(media)
+
+
+
