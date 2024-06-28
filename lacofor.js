@@ -146,3 +146,23 @@
 // introdução de funções
 
 
+// function dizeroi()
+// {
+//     console.log('oi')
+// }
+
+
+// function calcularmedia(n1,n2,n3){
+//     let media = (n1+n2+n3)/3
+//     console.log(media)
+//     return "Sou o retorno da função"
+// }
+// let mediafinal=calcularmedia(8,8,9)
+// console.log(mediafinal)
+
+function nomeIdade(nome,idade){
+       console.log(`${nome} ${idade}`)
+       return nome
+
+}
+let nome = nomeIdade('Paulo', 27 )
