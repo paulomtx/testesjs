@@ -71,18 +71,78 @@
 
 // tabela desconto
 
-let min =1 
-let max = 25
-let valorcompra = 500
-let incrementocompras =100
+// let min =1 
+// let max = 25
+// let valorcompra = 500
+// let incrementocompras =100
 
-for(let i =min; i<=max; i++){
-    let valorfinal= valorcompra - (valorcompra*i/100) 
-    console.log(`valor compra ${valorcompra}-${i}- valor final ${valorfinal}`)
-    valorcompra+=incrementocompras
+// for(let i =min; i<=max; i++){
+//     let valorfinal= valorcompra - (valorcompra*i/100) 
+//     console.log(`valor compra ${valorcompra}-${i}- valor final ${valorfinal}`)
+//     valorcompra+=incrementocompras
 
-}
+// }
+
+// Questão 4 
+
+// let somanumeros=0
+
+// for (let i = 1; i <= 10; i++) {
+//     somanumeros+= Number(prompt(`Digite cada nota ${i}`))
+    
+// }
+
+// console.log(`A soma dos números é ${somanumeros}`)
+
+// let numero= 0
+// let soma = 0
+// while (numero<=50) {
+//     console.log(numero)
+//     numero+=2
+ 
+// } 
+
+// questão 7
+
+// let soma=0
 
 
+// for(let i =0 ; i<=50;i++){
+//     if(i%2==0){
+//         console.log(i)
+//         soma +=i
+        
+//     }
+   
+// }
+// console.log(soma) 
+
+// Questão 5
+
+// let numuser=(prompt(`Digite o primeiro número:`))
+
+
+// let maior=numuser
+// let menor =numuser
+// let qtdnumeros=10
+
+
+
+// for(i=2;i<=qtdnumeros;i++){
+
+
+//     if (numuser>maior) {
+//        maior=numuser
+//     } 
+//     else if(numuser<menor){
+//        menor=numuser
+//     }
+//     if(i<11){
+//       numuser=(prompt(`Digite o ${i} número`))  
+//     }
+    
+// }
+
+// introdução de funções
 
 
