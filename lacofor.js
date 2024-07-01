@@ -160,9 +160,11 @@
 // let mediafinal=calcularmedia(8,8,9)
 // console.log(mediafinal)
 
-function nomeIdade(nome,idade){
-       console.log(`${nome} ${idade}`)
-       return nome
+// function nomeIdade(nome,idade){
+//        console.log(`${nome} ${idade}`)
+//        return nome
 
-}
-let nome = nomeIdade('Paulo', 27 )
+// }
+// let nome = nomeIdade('Paulo', 27 )
+
+

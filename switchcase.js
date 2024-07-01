@@ -21,40 +21,43 @@
 // calculadoras
 
 
-// let n1 = Number(prompt('digite primeiro numero'))
-// let n2 = Number(prompt('digite segundo numero'))
-// let resultado
-// let opcao= prompt("digite a o operação + , - , / ,* ")
+let n1 = Number(prompt('digite primeiro numero'))
+let n2 = Number(prompt('digite segundo numero'))
+let resultado
+let opcao= prompt("digite a o operação + , - , / ,* ")
 
+function calculadora(n1,n2,opcao){
+    
+}
+    switch (opcao) {
+        case '+':
+            resultado=n1+n2
+            console.log(resultado)
+            break;
+        case '-':
+            resultado=n1-n2
+            console.log(resultado)
+            break;
+        case '*':
+            resultado=n1*n2
+            console.log(resultado)
+            break;
+        case '/':
+            if(n2!=0){
+            resultado=n1/n2
+            console.log(resultado)
+            break;
+    }
+            else{
+            resultado = 'não é possivel divisão por 0 '
+            }
 
-//     switch (opcao) {
-//         case '+':
-//             resultado=n1+n2
-//             console.log(resultado)
-//             break;
-//         case '-':
-//             resultado=n1-n2
-//             console.log(resultado)
-//             break;
-//         case '*':
-//             resultado=n1*n2
-//             console.log(resultado)
-//             break;
-//         case '/':
-//             if(n2!=0){
-//             resultado=n1/n2
-//             console.log(resultado)
-//             break;
-//     }
-//             else{
-//             resultado = 'não é possivel divisão por 0 '
-//             }
+        default:
+            console.log('não há suporte para operação escolhida')
+            break;
+    }
 
-//         default:
-//             console.log('não há suporte para operação escolhida')
-//             break;
-//     }
-
+ 
 //contas bancárias
 
 
