@@ -189,5 +189,12 @@ for(let i=1;i<=novotamanhodafila;i++){
     atendimentoamanha.push(proximo)
 }
 
+let nuemros =[1,2,3]
 
+function multiplicar(num){
+    return num**2
+}
 
+let numeros_quadrado= nuemros.map((item)=> multiplicar(item))
+console.log(nuemros)
+console.log(numeros_quadrado)
