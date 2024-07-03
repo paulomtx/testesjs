@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Título 1</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, soluta.</p>
+    <p class="paragrafoclasse">Lorem ipsum dolor sit amet.</p>
+    
+    <ul>
+        <li>coisa</li>
+        <li>coisa</li>
+        <li id="especial">coisa</li>
+    </ul>
+
+
+    <div>
+        <h2>Título 2</h2>
+    </div>
+
+    <script>
+        // mais generalista = tag
+        let paragrafos = document.getElementsByTagName('p')//[]
+        let p = document.querySelector('p')//  seleciona o primeiro elemento com selector indicado
+        let todosp = document.querySelectorAll('p')/[]
+
+        // mais especifica que a tag
+        let paragrafocomclasse =document.getElementsByClassName('paragrafoclasse')// todos os elementos
+        let pclasse = document.querySelector(".paragrafoclasse")//primeira ocorrencia
+        let psclasse = document.querySelectorAll(".paragrafoclasse")//[]
+        //buscando uma classe que não existe - array vazio
+
+
+        // metodo mais especifico = unico elemento
+
+        let item= document.getElementById('especial')
+
+
+        item.style.color= 'red'
+
+        item.innerHTML= 'mudei com js'
+    </script>
+</body>
+</html>

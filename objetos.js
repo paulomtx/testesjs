@@ -52,39 +52,45 @@
 //crie um método alterar dispobilidade. Se a disponibilidade estiver true altere pra false e vice-versa.
 
 
-// let produtos = []
+let produtos = []
 
 
 
 
-// for(let i=1;i<=5;i++){
+for(let i=1;i<=5;i++){
     
 
-//     let produto = {
+    let produto = {
     
 
-//     nome:prompt(`nome ${i}`), 
-//     preco: parseFloat(prompt(`Preço ${i}`)),
-//     cor:prompt(`Cor do produto ${i}`),
-//     tamanho:prompt(`Tamanho do produto ${i}`),
-//     disponibilidade:confirm(`Produto ${i} está disponivel?`),
-//     calculardesconto:function(desconto=0){
-//         return produto.preco*(1-desconto/100)},
+    nome:prompt(`nome ${i}`), 
+    preco: parseFloat(prompt(`Preço ${i}`)),
+    cor:prompt(`Cor do produto ${i}`),
+    tamanho:prompt(`Tamanho do produto ${i}`),
+    disponibilidade:confirm(`Produto ${i} está disponivel?`),
+    calculardesconto:function(desconto=0){
+        return produto.preco*(1-desconto/100)},
 
-//         alterardisponibilidade:function(){
+        alterardisponibilidade:function(){
 
-//         if(produto.disponibilidade){
-//             produto.disponibilidade=false
-//         }else{
-//             produto.disponibilidade=true
-//         }
-//     }
+        if(produto.disponibilidade){
+            produto.disponibilidade=false
+        }else{
+            produto.disponibilidade=true
+        }
+    }
 
 
     
 
 
-//     }
+    }
+
+}
+    
+console.log(produtos)
+let produto2=JSON.stringify(produtos[1])
+console.log(produto2)
 
 
 //     produtos.push(produto)
