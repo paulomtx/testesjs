@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .oculta{
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <h1>Título 1</h1>
@@ -11,15 +16,24 @@
     <p class="paragrafoclasse">Lorem ipsum dolor sit amet.</p>
     
     <ul>
-        <li>coisa</li>
-        <li>coisa</li>
-        <li id="especial">coisa</li>
+        <li>coisa 1 </li>
+        <li class="oculta">coisa 2 </li>
+        <li id="especial">coisa 3 </li>
     </ul>
 
 
     <div>
         <h2>Título 2</h2>
     </div>
+
+    <form action="#">
+        <input type="text" id="nome " placeholder="Digite seu nome">
+        <input type="checkbox" name="turno" id="turnoManha" value="Manha">
+        <label for="turnoManha">Manhã</label>
+        <input type="checkbox" name="turno" id="turnotarde" value="tarde">
+        <label for="turnotarde">Tarde</label>
+        <button onclick="dizeroi()">DIZER OI </button>
+    </form>
 
     <script>
         // mais generalista = tag
@@ -45,12 +59,18 @@
 
         // manipulação de conteudo de tag
 
-        item.innerHTML= 'mudei com js'
+        // item.innerHTML= 'mudei com js'
 
         let li = document.querySelector('#especial')
 
         let div = document.querySelector('div')
-        div.innerHTML+='<h3> Meu títullo <h3>'
+        div.innerHTML='<h3> Meu títullo <h3>'
+
+        let itemOculto =document.querySelector('oculta')
+
+       function dizeroi(){
+        alert('oi')
+       }
     </script>
 </body>
 </html>
