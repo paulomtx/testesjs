@@ -1,33 +1,16 @@
-// // senha conta bncária
+// senha 
 
 // let senha = 123
-// let senhauser = Number(prompt("digite a senha"))
-// let tentativa = 3
-// let contTentativa =1
+// let senhauser = prompt("digite a senha")
 
-// if (senha == senhauser) {
-//     console.log('Entrou na conta')
+
+// if (senha==senhauser) {
+//     console.log('Caminho feliz')
 // } else {
-//     while (senha !=senhauser && contTentativa<3) {
-//         senhauser= prompt(`Senha incorreta . Você tem ${tentativa-contTentativa} Digite novamente a senha`)
-//         if (senha==senhauser) {
-//             console.log("Acertou a senha")
-//         }
-//         else{
-//             contTentativa += 1
-//         }
-    
+//     while (senha!=senhauser) {
      
+//      let digite =prompt('digite novamente')
      
         
 //     }
 // }
-
-
-// let cont = 1
-
-
-// do {
-//     console.log(cont)
-//     cont+=1
-// } while (cont<10);

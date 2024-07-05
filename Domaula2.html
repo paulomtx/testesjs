@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" style="display: flex; flex-direction: column; width: 600px;">
+        <label for="entrada">Entrada:</label>
+        <input type="number" id="entrada" value="0" onchange="mostrarconta()">
+        <label for="pratoprincipal">Prato Principal::</label>
+        <input type="number" id="pratoprincipal" value="0" onchange="mostrarconta()">
+        <label for="bebida">Bebida:</label>
+        <input type="number" id="bebida" value="0" onchange="mostrarconta()">
+        <label for="sobremesa">Sobremesa:</label>
+        <input type="number" id="sobremesa" value="0" onchange="mostrarconta()">
+        <label for="subtototal">SubTotal:</label>
+        <input type="number" id="subtotal" value="0" disabled>
+         <label for="servico">10% Serviço:</label>
+        <input type="number" id="servico" value="0" disabled>
+        <label for="total">Total:</label>
+        <input type="number" id="total" value="0" disabled >
+    </form>
+
+    <script src="calculocomanda.js"></script>
+
+
+
+</body>
+</html>
