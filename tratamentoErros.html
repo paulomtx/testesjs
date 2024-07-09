@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+      try {
+        //  todo código possivel de erro
+        let numero =Number(prompt('Digite o numero 1 ou 2'))
+        
+
+        if(numero==1 || numero==2 ){
+            alert('Acertou miseravi')
+        }else{
+            throw new Error('Você não digitou o numero desejada.Erro personalizado')
+        }
+        
+      } catch (error) {
+        // captar qualquer erro levantado no bloco try
+        console.log(error.message)
+      }
+      finally{
+        console.log('executei mesmo assim')
+      }
+
+
+      alert('executei o mesmo erro')
+    </script>
+
+
+
+
+
+
+</body>
+</html>
