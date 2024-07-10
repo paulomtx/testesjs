@@ -3,7 +3,13 @@ async function buscarProduto(id){
 
     let produto= await resposta.json()
 
-    console.log(produto.title)
+    return produto
 }
 
-buscarProdutos(1)
+async function mostraNoConsole(funcaoAssincrona,id){
+    console.log(await funcaoAssincrona(id))
+   
+}
+
+console.log(buscarProduto(1))
+mostraNoConsole(buscarProduto,1)

@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
         main{
             display: flex;
@@ -12,6 +13,7 @@
             justify-content: center;
             align-items: center;
         }
+
         .containerFuncionarios{
             display: flex;
             flex-direction: row;
@@ -19,71 +21,107 @@
             justify-content: center;
             align-items: center;
         }
-        .cardfuncionario{
+
+        .cardFuncionario{
             border-radius: 10px;
             border: 2px solid black;
-            background-color: rgb(155,155,155);
+            background-color: rgb(155, 155, 155);
             display: flex;
-            width: 300px;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
+            flex-direction: column;
+            width: 300px;
+            margin: 10px;
         }
+        
         img{
             width: 150px;
-            border-radius: 2px;
+            border-radius: 50%;        
         }
-    </style>
-  
 
+    </style>
 </head>
 <body>
- <main>
-    <h1>Funcionários</h1>
-    <div class="containerFuncionarios">
-        <h2>Cleitinho Freitas</h2>
 
-    </div>
- </main>
- <script>
+    <main>
+        <h1>Funcionários</h1>
 
-    let funcionarios =[
-        {
+        <div  class="containerFuncionarios">
 
-        }
-        {
+            <div class="cardFuncionario">
+                <h2>João Pedro Alencar</h2>
+                <img src='/imagens/pessoa1.jpg' alt="Avatar">
+                <h3>Idade: 12 anos</h3>
+                <h3>Cargo: Herdeiro</h3>
+                <h3>Salário: 50.000,00</h3>                
+            </div>
+            
 
-        }
-        {
+        </div>
+    </main>
 
-        }
+    <script>
+        let funcionarios = [
+            {
+                img: '/imagens/pessoa2.jpg',
+                nome: "João Silva",
+                idade: 25,
+                cargo: "Desenvolvedor",
+                salario: 5000
+            },
+            {
+                img: '/imagens/pessoa3.jpg',
+                nome: "Maria Bezerra",
+                idade: 30,
+                cargo: "Designer",
+                salario: 4000
+            },
+            {
+                img: '/imagens/pessoa4.jpg',
+                nome: "José Ramos",
+                idade: 35,
+                cargo: "Gerente",
+                salario: 6000
+            }
+        ]
+        //elemento pai -> cardFuncionário
+        let containerFuncionarios = document.querySelector('.containerFuncionarios')
 
-    ]
+       function criarCardFuncionario(itemArray){
+        let cardFuncionario = document.createElement('div')
+        cardFuncionario.classList.add('cardFuncionario')
+        // cardFuncionario.classList.remove('cardFuncionario')
+
+        let imagemPerfil = document.createElement('img')
+        imagemPerfil.src = itemArray.img
+        imagemPerfil.alt = itemArray.nome
+
+        let nome = document.createElement('h2')
+        nome.innerHTML = ` ${itemArray.nome}`
+
+        let idade = document.createElement('h3')
+        idade.innerHTML= ` Idade: ${itemArray.idade}`
+        let cargo = document.createElement('h3')
+        cargo.innerHTML =` Cargo: ${itemArray.cargo}`
+        let salario = document.createElement('h3')
+        salario.innerHTML = ` Salário: R$ ${(itemArray.salario).toFixed(2)}`
+
+        cardFuncionario.appendChild(nome)
+        cardFuncionario.appendChild(imagemPerfil)
+        cardFuncionario.appendChild(idade)
+        cardFuncionario.appendChild(cargo)
+        cardFuncionario.appendChild(salario)
+
+        containerFuncionarios.appendChild(cardFuncionario)
+
+       }
+
+       funcionarios.forEach((func)=> criarCardFuncionario(func))
 
 
-    let containerFuncionarios=document.querySelector('.containerFuncionarios')
-    let cardFuncionario=document.createElement('div')
-    cardFuncionario.classList.add('cardFuncionario')
-    // cardFuncionario.classList.remove('cardFuncionario')
-
-    let imagemPerfil=document.createElement('img')
-    imagemPerfil.src=funcionarios[0].img
-    imagemPerfil.alt=funcionarios[0].nome
-
-    let nome=document.createElement('h2')
-    nome.innerHTML=funcionarios[0].nome
-
-    let idade=document.createElement('h3')
-    idade.innerHTML=funcionarios[0].idade
-
-    let cargo = document.createElement('h3')
-    cargo.innerHTML=funcionarios[0].cargo
-
-    let salario= document.createElement('h3')
-    salario.innerHTML=funcionarios[0].salario
+        
+    </script>
     
-    cardFuncionario.appendChild(imagemPerfil)
- </script>
 
 </body>
 </html>
